@@ -1,4 +1,4 @@
-# Aplaca-Trading-Algo
+# Aplaca Trading Algo
 A live swing trading algorithm named Athena that runs on the Alpaca API. Athena works by taking a perosnalized list of stocks/indices, compiles 5 years of stock trading data for each of those stocks into a dataframe, and generates buy levels based on multiple indicators like the fibonacci retractments, bollinger bands and exponential moving averages. Once the market opens, Athena will connect to real time market data via Alpaca and if the stock price moves below a buy level, athena will intiate a buy order and will wait til another buy level is reached to intiate another buy order. The amount of buys are limited for each asset to ensure proper risk management. Multiple risk management features are built into the trading algo as well. Athena runs continously on Amazon cloud until the user stops it through keyboard interrupt. 
 
 
